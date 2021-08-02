@@ -1,0 +1,49 @@
+@import './../settings/mixins.settings.scss';
+@import './../settings/variables.settings.scss';
+
+.header {
+  padding: 0px px-to-rem(25);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 30;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: map-get($sizes, 'header-height');
+  width: map-get($sizes, 'main-wrapper');
+  background: map-get($colors, 'background');
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  transform: translateX(-50%);
+
+  &__logo {
+    height: px-to-rem(57);
+  }
+
+  &__menu {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+
+    &__item {
+      margin-left: px-to-rem(43);
+      font-size: px-to-rem(18);
+      color: map-get($colors, 'primary');
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    &__login-button {
+      @include button(map-get($colors, 'primary'));
+      margin-left: px-to-rem(62);
+      height: px-to-rem(32);
+      width: px-to-rem(120);
+      border-radius: 16px;
+    }
+  }
+}

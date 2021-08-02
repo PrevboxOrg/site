@@ -1,0 +1,24 @@
+@import '../settings/mixins.settings.scss';
+
+$sizes: (
+  'main-wrapper': px-to-rem(1475),
+  'main-wrapper-small': px-to-rem(1075),
+  'header-height': px-to-rem(95)
+);
+
+$colors: (
+  'primary': #051138,
+  'secondary': #77ddee,
+  'tertiary': #c4c4c4,
+  'background': #ffffff,
+);
+
+$colorsContrast: ();
+
+$responsive: (
+  'desktop-large': '1920px',
+  'desktop-medium': '1440px',
+  'desktop-small': '1366px'
+);
+
+$font: 'coresans', Arial, sans-serif;

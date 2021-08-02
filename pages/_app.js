@@ -1,7 +1,7 @@
-import '../styles/globals.css'
+import '../src/styles/index.scss';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function PrevboxWebsite({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default PrevboxWebsite;

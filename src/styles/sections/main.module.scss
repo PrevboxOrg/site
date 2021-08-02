@@ -1,0 +1,50 @@
+@import './../settings/mixins.settings.scss';
+@import './../settings/variables.settings.scss';
+
+.main-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    flex: 40%;
+    width: 40%;
+
+    &__title {
+      margin: 0px 0px px-to-rem(35) 0px;
+      font-size: px-to-rem(46);
+      font-weight: 600;
+      color: map-get($colors, 'primary');
+    }
+
+    &__subtitle {
+      margin: 0px 0px px-to-rem(35) 0px;
+      font-size: px-to-rem(22);
+      font-weight: 500;
+      color: map-get($colors, 'secondary');
+    }
+
+    &__link {
+      @include button(map-get($colors, 'primary'));
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: px-to-rem(330);
+      height: px-to-rem(48);
+      font-size: px-to-rem(20);
+      font-weight: 500;
+      border-radius: 24px;
+      text-decoration: none;
+    }
+  }
+
+  &__image-wrapper {
+    flex: 60%;
+    width: 60%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

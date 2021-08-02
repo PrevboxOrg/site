@@ -1,0 +1,31 @@
+@import './../settings/mixins.settings.scss';
+@import './../settings/variables.settings.scss';
+
+.social-security-section {
+  position: relative;
+  height: 100vh;
+
+  &__background-front {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    background-color: map-get($colors, 'secondary');
+    border-radius: 5% / 7%;
+    transform: skew(25deg) translateX(-50%);
+  }
+
+  &__background-back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 19;
+    height: 90%;
+    width: 110%;
+    background-color: map-get($colors, 'primary');
+    border-radius: 5% / 7%;
+    transform: skew(-10deg) translate(-50%, -50%) rotate(10deg);
+  }
+}
