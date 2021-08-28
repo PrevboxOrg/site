@@ -1,6 +1,7 @@
 @import './settings/normalize.settings.scss';
 @import './settings/variables.settings.scss';
 @import './fonts/coresans.scss';
+@import './swiper.scss';
 
 html,
 body {
@@ -52,6 +53,7 @@ html {
   margin: 0 auto;
   padding: 0px px-to-rem(25);
   position: relative;
+  z-index: 25;
   width: 100%;
   max-width: map-get($sizes, 'main-wrapper');
 

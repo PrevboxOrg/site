@@ -1,0 +1,49 @@
+{
+  "TITLE": "Escolha o melhor plano para você",
+  "SUBTITLE": "Venha fazer parte e se junte a mais advogados que usam o Prevbox",
+  "PLAN_INITIAL": {
+    "TITLE": "Plano Inicial",
+    "IMAGE": "/sections/plans/inicial.svg",
+    "PRICE": {
+      "CURRENCY": "R$",
+      "VALUE": "39",
+      "VALUE_CENTS": "99",
+      "PERIOD": "mês"
+    },
+    "BENEFITS": [
+      "Especialistas levantam e analisam os processos da empresa",
+      "Indicado para quem necessita de orientações específicas sobre os detalhes do seu processo"
+    ],
+    "BUTTON": "Começar"
+  },
+  "PLAN_ANTECIPATED": {
+    "TITLE": "Plano Antecipado",
+    "IMAGE": "/sections/plans/antecipado.svg",
+    "PRICE": {
+      "CURRENCY": "R$",
+      "VALUE": "49",
+      "VALUE_CENTS": "99",
+      "PERIOD": "mês"
+    },
+    "BENEFITS": [
+      "Especialistas levantam e analisam os processos da empresa",
+      "Indicado para quem necessita de orientações específicas sobre os detalhes do seu processo"
+    ],
+    "BUTTON": "Começar"
+  },
+  "PLAN_PREMIUM": {
+    "TITLE": "Plano Premium",
+    "IMAGE": "/sections/plans/premium.svg",
+    "PRICE": {
+      "CURRENCY": "R$",
+      "VALUE": "89",
+      "VALUE_CENTS": "99",
+      "PERIOD": "mês"
+    },
+    "BENEFITS": [
+      "Especialistas levantam e analisam os processos da empresa",
+      "Indicado para quem necessita de orientações específicas sobre os detalhes do seu processo"
+    ],
+    "BUTTON": "Começar"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "IMAGE": "/sections/petition-database/archive.svg",
+  "IMAGE_ALT": "Banco de petição",
+  "TITLE": "Banco de petições completo e sem limite de download",
+  "SUBTITLE": "Peças para todos os benefícios, nas esferas administrativa e judicial.",
+  "KNOW_MORE": "Saiba mais",
+  "PETITIONS": [
+    "Petições pré-reforma",
+    "Petições de acordo com as regras de transição",
+    "Petições pós-reforma",
+    "Editáveis",
+    "Com download em formato word",
+    "Sempre atualizadas"
+  ]
+}

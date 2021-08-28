@@ -1,1 +1,154 @@
-{}
+{
+  "TITLE": "Cálculos Previdenciários",
+  "SUBTITLE": "Fazemos a parte complexa para você!",
+  "BENEFITS": {
+    "NAME": "Benefícios",
+    "ITEMS": [
+      {
+        "IMG": "auxilio-doenca.svg",
+        "TITLE": "Auxílio-doença",
+        "DESCRIPTIONS": [
+          "Benefício por Incapacidade Temporária (EC 103/2019).",
+          "Calcule o valor com as regras antes ou depois da Reforma."
+        ]
+      },
+      {
+        "IMG": "aposentadoria-por-invalidez.svg",
+        "TITLE": "Aposentadoria por invalidez",
+        "DESCRIPTIONS": [
+          "Aposentadoria por Incapacidade Permanente (EC 103/2019).",
+          "Calcule o valor com as regras antes ou depois da Reforma."
+        ]
+      },
+      {
+        "IMG": "auxilio-acidente.svg",
+        "TITLE": "Auxílio-acidente",
+        "DESCRIPTIONS": [
+          "Devido ao segurado com redução da capacidade laboral.",
+          "Calcule o valor com as regras antes ou depois da Reforma."
+        ]
+      },
+      {
+        "IMG": "aposentadoria-das-pessoas-com-deficiencias.svg",
+        "TITLE": "Aposentadoria das pessoas com deficiencias",
+        "DESCRIPTIONS": [
+          "Devido ao segurado com redução da capacidade laboral.",
+          "Calcule o valor com as regras antes ou depois da Reforma."
+        ]
+      },
+      {
+        "IMG": "aposentadoria-especial.svg",
+        "TITLE": "Aposentadoria especial",
+        "DESCRIPTIONS": [
+          "Segurados que exercem atividades insalubre ou perigosas.",
+          "Calcule o valor com as regras antes ou depois da Reforma."
+        ]
+      },
+      {
+        "IMG": "aposentadoria-por-idade-urbana.svg",
+        "TITLE": "Aposentadoria por idade urbana",
+        "DESCRIPTIONS": [
+          "Devido ao segurado que cumpriu requisitos de idade e carência.",
+          "Calcule o valor com as regras antes ou depois da Reforma."
+        ]
+      },
+      {
+        "IMG": "pensao-por-morte.svg",
+        "TITLE": "Pensão por morte",
+        "DESCRIPTIONS": [
+          "Devido ao dependente do segurado falecido.",
+          "Calcule o valor com as regras antes ou depois da Reforma."
+        ]
+      },
+      {
+        "IMG": "auxilio-reclusao.svg",
+        "TITLE": "Auxílio-Reclusão",
+        "DESCRIPTIONS": [
+          "Para dependentes do segurado recolhido à prisão.",
+          "Calcule o valor com as regras antes ou depois da Reforma."
+        ]
+      },
+      {
+        "IMG": "salario-maternidade.svg",
+        "TITLE": "Salário maternidade",
+        "DESCRIPTIONS": [
+          "Pago à gestante, adotante ou que tenha sofrido aborto.",
+          "Calcule o valor devido durante o afastamento das atividades."
+        ]
+      },
+      {
+        "IMG": "aposentadoria-rural.svg",
+        "TITLE": "Aposentadoria rural",
+        "DESCRIPTIONS": [
+          "Por idade ou por tempo de contribuição, no caso de empregado.",
+          "Calcule o valor do benefício."
+        ]
+      },
+      {
+        "IMG": "aposentadoria-do-professor.svg",
+        "TITLE": "Aposentadoria do professor",
+        "DESCRIPTIONS": [
+          "Magistério na educação fundamental, infantil e médio.",
+          "Calcule o valor com as regras antes ou depois da Reforma."
+        ]
+      },
+      {
+        "IMG": "aposentadoria-por-tempo-de-contribuicao.svg",
+        "TITLE": "Aposentadoria por tempo de contribuição",
+        "DESCRIPTIONS": [
+          "Segurados que alcançaram o tempo mínimo de contribuição.",
+          "Calcule com as regras antes da EC 103 ou de transição."
+        ]
+      }
+    ]
+  },
+  "REVIEWS": {
+    "NAME": "Revisões",
+    "ITEMS": [
+      {
+        "IMG": "liquidacao-de-sentenca.svg",
+        "TITLE": "Liquidação de sentença",
+        "DESCRIPTIONS": [
+          "Concessão, reativação ou revisão.",
+          "Apure os valores devidos em razão da condenação judicial."
+        ]
+      },
+      {
+        "IMG": "revisao-da-vida-toda.svg",
+        "TITLE": "Revisão da vida toda",
+        "DESCRIPTIONS": [
+          "Revise o benefício previdenciário.",
+          "Confira revisões que podem aumentar o benefício."
+        ]
+      },
+      {
+        "IMG": "valor-da-causa.svg",
+        "TITLE": "Valor da causa",
+        "DESCRIPTIONS": [
+          "Apresente o cálculo na sua inicial.",
+          "Verifique a competência para a demanda judicial"
+        ]
+      },
+      {
+        "IMG": "calculo-simplificado.svg",
+        "TITLE": "Cálculo simplificado",
+        "DESCRIPTIONS": [
+          "Reajuste de RMI, Tempo de Contribuição, atualização monetária, nível de ruído, qualidade de segurado, carência e fator."
+        ]
+      }
+    ]
+  },
+  "OTHERS": {
+    "NAME": "Outros",
+    "ITEMS": [
+      {
+        "IMG": "planejamento-previdenciario.svg",
+        "TITLE": "Planejamento previdenciário",
+        "DESCRIPTIONS": [
+          "Analise os requisitos para alcance benefício mais vantajoso.",
+          "Simule vários cenários."
+        ]
+      }
+    ]
+  }
+}

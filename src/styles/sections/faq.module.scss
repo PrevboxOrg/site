@@ -1,0 +1,114 @@
+@import './../settings/mixins.settings.scss';
+@import './../settings/variables.settings.scss';
+
+.faq-section {
+  position: relative;
+  height: 100vh;
+
+  &__wrapper {
+    padding: px-to-rem(50) 0px;
+    height: 100%;
+  }
+
+  &__title {
+    margin: 0px 0px px-to-rem(15) 0px;
+    font-size: px-to-rem(46);
+    font-weight: 600;
+    color: map-get($colors, 'background');
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin: 0px 0px px-to-rem(15) 0px;
+    font-size: px-to-rem(28);
+    font-weight: 500;
+    color: map-get($colors, 'background');
+    text-align: center;
+  }
+
+  &__background-front {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    background-color: map-get($colors, 'primary');
+    border-radius: 5% / 7%;
+    transform: skew(25deg) translateX(-50%);
+  }
+
+  &__background-back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 19;
+    height: 90%;
+    width: 110%;
+    background-color: map-get($colors, 'secondary');
+    border-radius: 5% / 7%;
+    transform: skew(-10deg) translate(-50%, -50%) rotate(10deg);
+  }
+
+  &__question {
+    margin-bottom: px-to-rem(21);
+    height: px-to-rem(60);
+    overflow: hidden;
+    transition: height 250ms;
+
+    &__plus {
+      position: relative;
+      margin-right: px-to-rem(22);
+      width: px-to-rem(24);
+      height: px-to-rem(24);
+
+      div:nth-child(1) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 3px;
+        background: map-get($colors, 'secondary');
+        transform: translate(-50%, -50%);
+      }
+
+      div:nth-child(2) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 3px;
+        height: 100%;
+        background: map-get($colors, 'secondary');
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        transition: opacity 250ms;
+      }
+    }
+
+    &__text {
+      padding: px-to-rem(21);
+      height: px-to-rem(60);
+      display: flex;
+      align-items: center;
+      border: 3px solid map-get($colors, 'background');
+      border-radius: px-to-rem(30);
+      font-size: px-to-rem(22);
+      color: map-get($colors, 'secondary');
+      cursor: pointer;
+    }
+
+    &__answer {
+      padding-left: px-to-rem(73);
+      font-size: px-to-rem(20);
+      color: map-get($colors, 'background');
+    }
+
+    &--active {
+      height: px-to-rem(150);
+
+      .faq-section__question__plus div:nth-child(2) {
+        opacity: 0;
+      }
+    }
+  }
+}

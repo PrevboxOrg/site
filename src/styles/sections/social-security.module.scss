@@ -5,6 +5,27 @@
   position: relative;
   height: 100vh;
 
+  &__wrapper {
+    padding: px-to-rem(50) 0px;
+    height: 100%;
+  }
+
+  &__title {
+    margin: 0px 0px px-to-rem(15) 0px;
+    font-size: px-to-rem(46);
+    font-weight: 600;
+    color: map-get($colors, 'primary-light');
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin: 0px 0px px-to-rem(15) 0px;
+    font-size: px-to-rem(28);
+    font-weight: 500;
+    color: map-get($colors, 'background');
+    text-align: center;
+  }
+
   &__background-front {
     position: absolute;
     top: 0;
@@ -27,5 +48,89 @@
     background-color: map-get($colors, 'primary');
     border-radius: 5% / 7%;
     transform: skew(-10deg) translate(-50%, -50%) rotate(10deg);
+  }
+
+  .categories {
+    margin: px-to-rem(50) auto;
+    display: flex;
+    width: 100%;
+    max-width: px-to-rem(642);
+    height: px-to-rem(56);
+    background-color: map-get($colors, 'background');
+    border-radius: px-to-rem(28);
+
+    &__category {
+      flex: 1 1 auto;
+      height: 100%;
+      background: none;
+      color: map-get($colors, 'tertiary');
+      border: none;
+      border-radius: px-to-rem(28);
+      cursor: pointer;
+      transition: background 250ms, color 250ms, border 250ms;
+
+      &--active {
+        border: 2px solid map-get($colors, 'background');
+        background: map-get($colors, 'primary');
+        color: map-get($colors, 'secondary');
+      }
+    }
+  }
+
+  .slides {
+    max-height: px-to-rem(550);
+    width: 100%;
+    overflow: hidden;
+
+    &__vertical-slider {
+      display: flex;
+      flex-direction: column;
+      transition: transform 500ms;
+    }
+
+    &__wrapper {
+      padding-bottom: px-to-rem(50);
+      height: px-to-rem(550);
+      min-height: px-to-rem(550);
+      width: 100%;
+    }
+  }
+
+  .slide-item {
+    padding: px-to-rem(20) px-to-rem(45);
+    height: 100%;
+    border: 3px solid map-get($colors, 'background');
+    border-radius: px-to-rem(20);
+
+    &__image {
+      margin-bottom: px-to-rem(20);
+      height: px-to-rem(150);
+      max-width: px-to-rem(220);
+    }
+
+    &__title {
+      margin: 0px 0px px-to-rem(20) 0px;
+      font-size: px-to-rem(28);
+      font-weight: 600;
+      color: map-get($colors, 'primary');
+    }
+
+    &__description {
+      position: relative;
+      margin: 0px 0px px-to-rem(20) 0px;
+      font-size: px-to-rem(18);
+      color: map-get($colors, 'text');
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: px-to-rem(-8);
+        width: px-to-rem(26);
+        height: px-to-rem(26);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 103.28 103.28'%3E%3Ctitle%3EAtivo 1%3C/title%3E%3Cg id='Camada_2' data-name='Camada 2'%3E%3Cg id='Layer_1' data-name='Layer 1'%3E%3Cpath d='M98.35,45.24a46.59,46.59,0,0,1,.43,6.4A47.14,47.14,0,1,1,83.57,17' style='fill:none;stroke:%23fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:9px'/%3E%3Cpath d='M29.58,48.2l19,19a5.15,5.15,0,0,0,7.28,0L93.35,29.62' style='fill:none;stroke:%23171640;stroke-linecap:round;stroke-miterlimit:10;stroke-width:9px'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        transform: translateX(-100%);
+      }
+    }
   }
 }
