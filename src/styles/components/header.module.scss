@@ -36,6 +36,11 @@
       color: map-get($colors, 'primary');
       font-weight: 600;
       text-decoration: none;
+      transition: color 250ms;
+
+      &:hover {
+        color: map-get($colors, 'secondary');
+      }
     }
 
     &__login-button {

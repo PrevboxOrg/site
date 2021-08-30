@@ -4,7 +4,7 @@ import contents from './../contents/pages/index.json';
 import MainSection from './../sections/main';
 import SocialSecuritySection from './../sections/social-security';
 import PetitionDatabaseSection from './../sections/petition-database';
-import ToolsSection from './../sections/tools';
+import AboutUsSection from './../sections/about-us';
 import FAQSection from './../sections/faq';
 import PlansSection from './../sections/plans';
 
@@ -16,7 +16,7 @@ export default function IndexPage () {
       <MainSection />
       <SocialSecuritySection />
       <PetitionDatabaseSection />
-      <ToolsSection />
+      <AboutUsSection />
       <FAQSection />
       <PlansSection />
       <CTA />

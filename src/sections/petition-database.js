@@ -3,7 +3,7 @@ import c from '../contents/sections/petition-database.json';
 
 export default function PetitionDatabaseSection () {
   return (
-    <div className={`${s['petition-database-section']} main-wrapper`}>
+    <div className={`${s['petition-database-section']} main-wrapper`} id="peticoes">
       <div className={s['petition-database-section__image-wrapper']}>
         <img
           className={s['petition-database-section__image']}

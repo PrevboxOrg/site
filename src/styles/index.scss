@@ -19,6 +19,7 @@ html {
   font-family: $font;
   font-weight: 600;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 
   @media only screen and (max-width: #{map-get($responsive, 'desktop-medium')}) {
     font-size: 14px;

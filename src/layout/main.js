@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import Header from './../components/header';
-// import Footer from './../components/footer';
+import Footer from './../components/footer';
 
 export default function MainLayout ({ children, contents }) {
 
@@ -21,6 +21,6 @@ export default function MainLayout ({ children, contents }) {
 
     { children }
 
-    {/* <Footer /> */}
+    <Footer />
   </>;
 }

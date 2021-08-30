@@ -11,7 +11,7 @@ export default function SocialSecuritySection () {
   SwiperCore.use([Pagination]);
 
   return (
-    <div className={s['social-security-section']}>
+    <div className={s['social-security-section']} id="calculos">
       <div className={`main-wrapper ${s['social-security-section__wrapper']}`}>
         <h2 className={s['social-security-section__title']}>{c['TITLE']}</h2>
         <p className={s['social-security-section__subtitle']}>{c['SUBTITLE']}</p>

@@ -3,7 +3,7 @@ import c from '../contents/sections/plans.json';
 
 export default function PlansSection () {
   return (
-    <div className={s['plans-section']}>
+    <div className={s['plans-section']} id="assinaturas">
       <div className={`main-wrapper ${s['plans-section__wrapper']}`}>
         <h2 className={s['plans-section__title']}>{c['TITLE']}</h2>
         <p className={s['plans-section__subtitle']}>{c['SUBTITLE']}</p>

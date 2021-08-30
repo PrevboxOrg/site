@@ -14,7 +14,7 @@ export default function FAQSection () {
   }
 
   return (
-    <div className={s['faq-section']}>
+    <div className={s['faq-section']} id="perguntas">
       <div className={`main-wrapper ${s['faq-section__wrapper']}`}>
         <h2 className={s['faq-section__title']}>{c['TITLE']}</h2>
         <p className={s['faq-section__subtitle']}>{c['SUBTITLE']}</p>
