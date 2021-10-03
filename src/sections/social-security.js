@@ -49,11 +49,18 @@ export default function SocialSecuritySection () {
           <div className={s['slides__vertical-slider']} style={{ transform: `translateY(${activeVerticarSlider * -33.3333333333333333}%)` }}>
             <Swiper
               className={s['slides__wrapper']}
-              spaceBetween={50}
-              slidesPerView={4}
-              slidesPerGroup={4}
+              spaceBetween={25}
+              slidesPerView={1}
+              slidesPerGroup={1}
               grabCursor={true}
               pagination={{ clickable: true }}
+              breakpoints={{
+                480: {
+                  spaceBetween: 50,
+                  slidesPerView: 4,
+                  slidesPerGroup: 4
+                }
+              }}
             >
               {c['BENEFITS'].ITEMS.map((item, index) => {
                 return (
@@ -85,11 +92,18 @@ export default function SocialSecuritySection () {
 
             <Swiper
               className={s['slides__wrapper']}
-              spaceBetween={50}
-              slidesPerView={4}
-              slidesPerGroup={4}
+              spaceBetween={25}
+              slidesPerView={1}
+              slidesPerGroup={1}
               grabCursor={true}
               pagination={{ clickable: true }}
+              breakpoints={{
+                480: {
+                  spaceBetween: 50,
+                  slidesPerView: 4,
+                  slidesPerGroup: 4
+                }
+              }}
             >
               {c['REVIEWS'].ITEMS.map((item, index) => {
                 return (
@@ -121,11 +135,18 @@ export default function SocialSecuritySection () {
 
             <Swiper
               className={s['slides__wrapper']}
-              spaceBetween={50}
-              slidesPerView={4}
-              slidesPerGroup={4}
+              spaceBetween={25}
+              slidesPerView={1}
+              slidesPerGroup={1}
               grabCursor={true}
               pagination={{ clickable: true }}
+              breakpoints={{
+                480: {
+                  spaceBetween: 50,
+                  slidesPerView: 4,
+                  slidesPerGroup: 4
+                }
+              }}
             >
               {c['OTHERS'].ITEMS.map((item, index) => {
                 return (

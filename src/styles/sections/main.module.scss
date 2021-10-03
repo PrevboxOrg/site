@@ -6,9 +6,19 @@
   display: flex;
   align-items: center;
 
+  @media only screen and (max-width: #{map-get($responsive, 'mobile-large')}) {
+    flex-wrap: wrap;
+  }
+
   &__content {
     flex: 40%;
     width: 40%;
+
+    @media only screen and (max-width: #{map-get($responsive, 'mobile-large')}) {
+      padding-top: map-get($sizes, 'header-height-mobile');
+      flex: 100%;
+      width: 100%;
+    }
 
     &__title {
       margin: 0px 0px px-to-rem(35) 0px;
@@ -42,6 +52,11 @@
   &__image-wrapper {
     flex: 60%;
     width: 60%;
+
+    @media only screen and (max-width: #{map-get($responsive, 'mobile-large')}) {
+      flex: 100%;
+      width: 100%;
+    }
   }
 
   &__image {

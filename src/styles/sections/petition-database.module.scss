@@ -6,19 +6,44 @@
   display: flex;
   align-items: center;
 
+  @media only screen and (max-width: #{map-get($responsive, 'mobile-large')}) {
+    margin-bottom: px-to-rem(100);
+    height: initial;
+    flex-wrap: wrap;
+  }
+
   &__image-wrapper {
     flex: 50%;
     width: 50%;
+
+    @media only screen and (max-width: #{map-get($responsive, 'mobile-large')}) {
+      margin-bottom: px-to-rem(100);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 100%;
+      width: 100%;
+    }
   }
 
   &__image {
     width: 100%;
+
+    @media only screen and (max-width: #{map-get($responsive, 'mobile-large')}) {
+      width: 80%;
+    }
   }
 
   &__content {
     padding-left: px-to-rem(150);
     flex: 50%;
     width: 50%;
+
+    @media only screen and (max-width: #{map-get($responsive, 'mobile-large')}) {
+      padding-left: 0px;
+      flex: 100%;
+      width: 100%;
+    }
 
     &__title {
       margin: 0px 0px px-to-rem(30) 0px;

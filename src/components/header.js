@@ -1,10 +1,17 @@
 import Link from 'next/link';
+import { useState } from 'react';
+import cn from 'classnames';
 import s from './../styles/components/header.module.scss';
 import c from './../contents/components/header.json';
 
 export default function Header () {
+  const [active, setActive] = useState(false);
+
   return (
-    <div className={s['header']}>
+    <div className={cn({
+      [s['header']]: true,
+      [s['header--active']]: active
+    })}>
       <img
         className={s['header__logo']}
         src={c['LOGO']} alt={c['LOGO_ALT']} />
@@ -28,6 +35,12 @@ export default function Header () {
           </button>
         </li>
       </ul>
+
+      <button className={s['header__mobile-button']} onClick={() => setActive(!active)}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
     </div>
   );
 }

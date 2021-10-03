@@ -5,6 +5,13 @@
   position: relative;
   height: 100vh;
 
+  @media only screen and (max-width: #{map-get($responsive, 'mobile-large')}) {
+    padding-left: px-to-rem(15);
+    padding-right: px-to-rem(15);
+    margin-bottom: px-to-rem(100);
+    height: initial;
+  }
+
   &__wrapper {
     padding: px-to-rem(50) 0px;
     height: 100%;
@@ -24,6 +31,10 @@
     font-weight: 500;
     color: map-get($colors, 'background');
     text-align: center;
+
+    @media only screen and (max-width: #{map-get($responsive, 'mobile-large')}) {
+      margin-bottom: px-to-rem(50);
+    }
   }
 
   &__background-front {
@@ -36,6 +47,12 @@
     background-color: map-get($colors, 'primary');
     border-radius: 5% / 7%;
     transform: skew(25deg) translateX(-50%);
+
+    @media only screen and (max-width: #{map-get($responsive, 'mobile-large')}) {
+      left: 0;
+      border-radius: 0;
+      transform: none;
+    }
   }
 
   &__background-back {
@@ -48,6 +65,10 @@
     background-color: map-get($colors, 'secondary');
     border-radius: 5% / 7%;
     transform: skew(-10deg) translate(-50%, -50%) rotate(10deg);
+
+    @media only screen and (max-width: #{map-get($responsive, 'mobile-large')}) {
+      display: none;
+    }
   }
 
   &__question {

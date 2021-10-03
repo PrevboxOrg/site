@@ -8,7 +8,7 @@ export default function MainLayout ({ children, contents }) {
   return <>
     <Head>
       <title>{contents.TITLE} | Prevbox</title>
-      <meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover' />
+      <meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no' />
 
       {contents.META.map((meta, index) => {
         return <meta name={meta.TYPE} content={meta.CONTENT} key={`meta-${meta.TYPE}-${index}`} />;
